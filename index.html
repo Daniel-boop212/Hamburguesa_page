@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#11100e">
+  <meta name="description" content="Descubre capa por capa La Todo Terreno de FLAVD Company.">
+  <title>La Todo Terreno — FLAVD Company</title>
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/data.js" defer></script>
+  <script src="js/app.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="./" aria-label="FLAVD Company, inicio"><img class="brand__logo" src="assets/images/logo-gaby.jpg" alt=""><span>FLAVD<span class="brand__light"> COMPANY</span></span></a>
+    <div class="header-note"><span class="header-note__dot"></span> Hecha para descubrir</div>
+    <a class="header-link" href="#experiencia">Explorar <span aria-hidden="true">↘</span></a>
+  </header>
+
+  <main id="experiencia" class="hero">
+    <section class="hero__copy" aria-labelledby="hero-title">
+      <p class="hero__eyebrow"><span>01</span> LA FIRMA DE LA CASA</p>
+      <h1 class="hero__title" id="hero-title">La<br><em>TODO TERRENO.</em></h1>
+      <p class="hero__description">Siete capas. Un solo antojo.<br>El arte está en cada detalle.</p>
+      <div class="hero__actions">
+        <button class="button button--primary" id="toggle-burger" type="button" aria-expanded="false" aria-controls="burger-visual">
+          <span class="button__label">Descubrir capas</span><span class="button__icon" aria-hidden="true">↗</span>
+        </button>
+        <button class="button button--quiet" id="reset-burger" type="button"><span aria-hidden="true">⟲</span> Reiniciar</button>
+      </div>
+      <p class="interaction-hint" id="interaction-hint"><span class="hint-icon" aria-hidden="true">↓</span> Toca la hamburguesa para descubrir sus ingredientes</p>
+      <div class="hero__index"><span>CAPA A CAPA</span><span class="hero__index-line"></span><span>01 — 07</span></div>
+    </section>
+
+    <section class="burger-stage" aria-label="Hamburguesa interactiva">
+      <div class="stage-orbit stage-orbit--one"></div><div class="stage-orbit stage-orbit--two"></div>
+      <div class="stage-label"><span class="stage-label__spark">✳</span> UNA OBRA EN CAPAS <span class="stage-label__rule"></span></div>
+      <div class="burger" id="burger-visual" aria-label="La Todo Terreno, ilustración por capas">
+        <button class="burger__ingredient burger__ingredient--top-bun" data-ingredient="top-bun" type="button" aria-label="Tapa de pan brioche" aria-pressed="false">
+          <svg viewBox="0 0 420 124" role="img" aria-hidden="true"><defs><linearGradient id="bunTop" x2="0" y2="1"><stop stop-color="#f8c875"/><stop offset=".58" stop-color="#d98836"/><stop offset="1" stop-color="#a64d20"/></linearGradient></defs><path d="M15 106C22 48 83 8 210 7s188 41 195 99c1 11-9 16-21 16H36c-12 0-22-5-21-16Z" fill="url(#bunTop)" stroke="#6f321b" stroke-width="5"/><path d="M31 95c26-42 80-64 179-64s153 22 179 64" fill="none" stroke="#ffdd9b" stroke-opacity=".62" stroke-width="5" stroke-linecap="round"/><g fill="#fff0c9"><ellipse cx="125" cy="47" rx="4" ry="8" transform="rotate(-34 125 47)"/><ellipse cx="171" cy="31" rx="4" ry="8" transform="rotate(-18 171 31)"/><ellipse cx="230" cy="30" rx="4" ry="8" transform="rotate(13 230 30)"/><ellipse cx="278" cy="43" rx="4" ry="8" transform="rotate(27 278 43)"/><ellipse cx="91" cy="69" rx="4" ry="8" transform="rotate(-45 91 69)"/><ellipse cx="324" cy="70" rx="4" ry="8" transform="rotate(43 324 70)"/><ellipse cx="202" cy="50" rx="4" ry="8" transform="rotate(3 202 50)"/></g></svg>
+        </button>
+        <button class="burger__ingredient burger__ingredient--lettuce" data-ingredient="lettuce" type="button" aria-label="Lechuga" aria-pressed="false"><svg viewBox="0 0 420 66" aria-hidden="true"><path d="M27 39c-12-12 0-25 14-17 0-17 20-20 25-4 10-17 28-12 29 2 14-16 31-7 28 7 17-15 33-5 26 9 15-14 32-7 27 7 18-14 32-3 24 11 18-12 32-1 21 11 15-8 26 2 17 12H42c-12-5-17-13-15-25Z" fill="#65a64b" stroke="#315c31" stroke-width="4"/><path d="M41 42c65-7 130-7 195 0 50 5 93 4 139-2" fill="none" stroke="#b0d878" stroke-width="4" stroke-linecap="round"/></svg></button>
+        <button class="burger__ingredient burger__ingredient--tomato" data-ingredient="tomato" type="button" aria-label="Tomate rojo" aria-pressed="false"><svg viewBox="0 0 420 60" aria-hidden="true"><path d="M30 35c4-20 61-27 180-27s176 7 180 27c3 14-15 21-37 21H67c-22 0-40-7-37-21Z" fill="#d94b36" stroke="#7f2e24" stroke-width="4"/><path d="M61 32c45-10 99-13 149-13s104 3 149 13" fill="none" stroke="#ff8c61" stroke-width="5" stroke-linecap="round"/><g fill="#f8b469"><circle cx="145" cy="32" r="2"/><circle cx="205" cy="28" r="2"/><circle cx="265" cy="33" r="2"/></g></svg></button>
+        <button class="burger__ingredient burger__ingredient--cheese" data-ingredient="cheese" type="button" aria-label="Queso mozzarella" aria-pressed="false"><svg viewBox="0 0 420 65" aria-hidden="true"><path d="M22 15c58-9 112-9 171-3l23 17 22-18c63-5 116-3 160 5l-8 24-35 4-21 17-24-19-38 7-40-12-31 10-36-15-48 16-28-20-72 5-22-7Z" fill="#f7b832" stroke="#a45a1f" stroke-width="4" stroke-linejoin="round"/><path d="M41 19c72-7 121-5 157 1" fill="none" stroke="#ffe17b" stroke-width="4" stroke-linecap="round"/></svg></button>
+        <button class="burger__ingredient burger__ingredient--patty" data-ingredient="patty" type="button" aria-label="Carne molida a la plancha" aria-pressed="false"><svg viewBox="0 0 420 78" aria-hidden="true"><path d="M18 36c0-18 39-29 105-30l181 1c63 1 98 12 98 31 0 22-37 34-103 35H116C53 72 18 59 18 36Z" fill="#713b2d" stroke="#3d241f" stroke-width="5"/><path d="M46 27c75-15 246-16 326 0M42 46c83-13 249-14 335-1" fill="none" stroke="#bd7550" stroke-width="5" stroke-linecap="round"/><path d="m142 17 24 13m39-15 23 13m42-9 22 13m-128 16 21 10m53-12 22 11m43-10 19 9" stroke="#43291f" stroke-width="5" stroke-linecap="round"/></svg></button>
+        <button class="burger__ingredient burger__ingredient--sauce" data-ingredient="sauce" type="button" aria-label="Salsa especial de la casa" aria-pressed="false"><svg viewBox="0 0 420 37" aria-hidden="true"><path d="M24 13c42-8 76 6 115 0s70-7 108 0 89-6 149-1l-8 16c-64 4-107-5-144 1s-74 7-110 0-69 5-101 0Z" fill="#c76c34" stroke="#823b22" stroke-width="4" stroke-linejoin="round"/><path d="M60 13c30-2 45 1 65 2m119 0c34 3 61-3 86-2" fill="none" stroke="#ffd08a" stroke-width="3" stroke-linecap="round"/></svg></button>
+        <button class="burger__ingredient burger__ingredient--bottom-bun" data-ingredient="bottom-bun" type="button" aria-label="Base de pan brioche" aria-pressed="false"><svg viewBox="0 0 420 83" aria-hidden="true"><path d="M20 9c77-9 300-9 380 0l-5 42c-3 19-23 25-48 25H73c-25 0-45-6-48-25Z" fill="#c9833c" stroke="#763b20" stroke-width="5"/><path d="M33 22c82-8 270-8 354 0" fill="none" stroke="#f4bd70" stroke-width="5" stroke-linecap="round"/><path d="M48 59c84 9 237 9 324 0" fill="none" stroke="#a85e2e" stroke-width="4" stroke-linecap="round"/></svg></button>
+      </div>
+      <div class="stage-caption"><span class="stage-caption__line"></span><span>DESLIZA LA MIRADA. ELIGE TU CAPA.</span><span class="stage-caption__line"></span></div>
+      <div class="layer-count"><span class="layer-count__number">07</span><span>CAPAS<br>DE SABOR</span></div>
+    </section>
+
+    <aside class="ingredient-panel" id="ingredient-panel" aria-labelledby="panel-title" aria-live="polite" hidden>
+      <div class="ingredient-panel__top"><span class="ingredient-panel__tag"><span></span> DETALLE DE CAPA</span><button class="ingredient-panel__close" id="close-panel" type="button" aria-label="Cerrar ficha">×</button></div>
+      <p class="ingredient-panel__number" id="panel-number">01 / 07</p>
+      <h2 class="ingredient-panel__title" id="panel-title"></h2>
+      <p class="ingredient-panel__description" id="panel-description"></p>
+      <dl class="ingredient-panel__details"><div><dt>Sabor</dt><dd id="panel-flavor"></dd></div><div><dt>Textura</dt><dd id="panel-texture"></dd></div><div><dt>Su papel</dt><dd id="panel-role"></dd></div></dl>
+      <div class="ingredient-panel__fact"><span class="fact-star" aria-hidden="true">✳</span><p id="panel-fact"></p></div>
+    </aside>
+  </main>
+  <section class="brand-story" aria-labelledby="brand-story-title">
+    <details class="brand-story__card">
+      <summary class="brand-story__summary">
+        <span class="brand-story__eyebrow">UN POCO DE NOSOTROS</span>
+        <span class="brand-story__question" id="brand-story-title">¿Por qué <em>FLAVD</em>?</span>
+        <span class="brand-story__teaser">Toca para conocer la historia <span aria-hidden="true">↗</span></span>
+      </summary>
+      <div class="brand-story__content">
+        <div class="brand-story__intro">
+          <p class="brand-story__stamp">F · L · A · V · D</p>
+          <h2>Un nombre hecho<br><em>por nosotros.</em></h2>
+          <p>FLAVD reúne las iniciales de quienes pusimos manos, ideas y corazón en este proyecto. Hecho con amor y entusiasmo, capa a capa.</p>
+        </div>
+        <ol class="brand-story__members" aria-label="Integrantes de FLAVD">
+          <!-- Reemplaza “Nombre del integrante” por el nombre de cada persona. -->
+          <li><span class="brand-story__initial">F</span><span class="brand-story__member-name">Fonseca Valery</span></li>
+          <li><span class="brand-story__initial">L</span><span class="brand-story__member-name">Lanza Juliana</span></li>
+          <li><span class="brand-story__initial">A</span><span class="brand-story__member-name">Andrade Gabriela</span></li>
+          <li><span class="brand-story__initial">V</span><span class="brand-story__member-name">Vitola Valerie</span></li>
+          <li><span class="brand-story__initial">D</span><span class="brand-story__member-name">De la Rosa Daniela</span></li>
+        </ol>
+      </div>
+    </details>
+  </section>
+  <footer class="site-footer"><span>FLAVD COMPANY <span class="footer-dot">●</span> COCINA DE CAPAS</span><span>Una buena historia tiene un gran centro.</span><span>BARRANQUILLA · HECHO PARA ANTOJAR</span></footer>
+</body>
+</html>
