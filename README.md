@@ -1,6 +1,6 @@
 # FLAVD Company — La Todo Terreno
 
-Anuncio estático e interactivo creado con HTML, CSS, JavaScript vanilla e ilustraciones SVG locales. No usa backend, API, compilación ni dependencias para producción. Las siete piezas son ilustraciones independientes, no una fotografía.
+Anuncio estático e interactivo creado con HTML, CSS, JavaScript vanilla e ilustraciones SVG locales. No usa backend, API, compilación ni dependencias para producción. Las nueve piezas son ilustraciones independientes, no una fotografía.
 
 ## Ejecutar localmente
 

@@ -333,43 +333,61 @@ body {
   bottom:198px;
   z-index:4
 }
+.burger__ingredient--bacon {
+  width:94%;
+  bottom:181px;
+  z-index:3
+}
+.burger__ingredient--onion {
+  width:92%;
+  bottom:163px;
+  z-index:2
+}
 .burger__ingredient--sauce {
   width:93%;
-  bottom:169px;
-  z-index:2
+  bottom:144px;
+  z-index:1
 }
 .burger__ingredient--bottom-bun {
   width:94%;
   bottom:98px;
-  z-index:1
+  z-index:0
 }
 .burger--exploded .burger__ingredient--top-bun {
-  transform:translate(-50%,-106px) rotate(-3deg);
+  transform:translate(-50%,-150px) rotate(-3deg);
   transition-delay:0ms
 }
 .burger--exploded .burger__ingredient--lettuce {
-  transform:translate(-50%,-41px) rotate(2deg);
+  transform:translate(-50%,-112px) rotate(2deg);
   transition-delay:55ms
 }
 .burger--exploded .burger__ingredient--tomato {
-  transform:translate(-50%,10px) rotate(-1deg);
+  transform:translate(-50%,-74px) rotate(-1deg);
   transition-delay:110ms
 }
 .burger--exploded .burger__ingredient--cheese {
-  transform:translate(-50%,67px) rotate(2deg);
+  transform:translate(-50%,-36px) rotate(2deg);
   transition-delay:165ms
 }
 .burger--exploded .burger__ingredient--patty {
-  transform:translate(-50%,128px) rotate(-1deg);
+  transform:translate(-50%,2px) rotate(-1deg);
   transition-delay:220ms
 }
-.burger--exploded .burger__ingredient--sauce {
-  transform:translate(-50%,147px) rotate(-1deg);
+.burger--exploded .burger__ingredient--bacon {
+  transform:translate(-50%,40px) rotate(-1deg);
   transition-delay:275ms
 }
-.burger--exploded .burger__ingredient--bottom-bun {
-  transform:translate(-50%,172px) rotate(2deg);
+.burger--exploded .burger__ingredient--onion {
+  transform:translate(-50%,78px) rotate(1deg);
   transition-delay:330ms
+}
+.burger--exploded .burger__ingredient--sauce {
+  transform:translate(-50%,116px) rotate(-1deg);
+  transition-delay:385ms
+}
+.burger--exploded .burger__ingredient--bottom-bun {
+  transform:translate(-50%,154px) rotate(2deg);
+  transition-delay:440ms
 }
 .stage-caption {
   position:absolute;
@@ -676,7 +694,7 @@ to {
   overflow:hidden
 }
 .burger-stage--exploded {
-  height:560px
+  height:640px
 }
 .burger-stage--exploded .layer-count {
   opacity:0;
@@ -729,39 +747,53 @@ to {
 .burger__ingredient--patty {
   bottom:178px
 }
+.burger__ingredient--bacon {
+  bottom:162px
+}
+.burger__ingredient--onion {
+  bottom:146px
+}
 .burger__ingredient--sauce {
-  bottom:150px
+  bottom:129px
 }
 .burger__ingredient--bottom-bun {
   bottom:88px
 }
 .burger--exploded .burger__ingredient--top-bun {
-  transform:translate(-50%,-72px) rotate(-3deg);
+  transform:translate(-50%,-116px) rotate(-3deg);
   transition-delay:0ms
 }
 .burger--exploded .burger__ingredient--lettuce {
-  transform:translate(-50%,-17px) rotate(2deg);
+  transform:translate(-50%,-85px) rotate(2deg);
   transition-delay:45ms
 }
 .burger--exploded .burger__ingredient--tomato {
-  transform:translate(-50%,28px) rotate(-1deg);
+  transform:translate(-50%,-54px) rotate(-1deg);
   transition-delay:90ms
 }
 .burger--exploded .burger__ingredient--cheese {
-  transform:translate(-50%,76px) rotate(2deg);
+  transform:translate(-50%,-23px) rotate(2deg);
   transition-delay:135ms
 }
 .burger--exploded .burger__ingredient--patty {
-  transform:translate(-50%,130px) rotate(-1deg);
+  transform:translate(-50%,8px) rotate(-1deg);
   transition-delay:180ms
 }
-.burger--exploded .burger__ingredient--sauce {
-  transform:translate(-50%,144px) rotate(-1deg);
+.burger--exploded .burger__ingredient--bacon {
+  transform:translate(-50%,39px) rotate(-1deg);
   transition-delay:225ms
 }
-.burger--exploded .burger__ingredient--bottom-bun {
-  transform:translate(-50%,169px) rotate(2deg);
+.burger--exploded .burger__ingredient--onion {
+  transform:translate(-50%,70px) rotate(1deg);
   transition-delay:270ms
+}
+.burger--exploded .burger__ingredient--sauce {
+  transform:translate(-50%,101px) rotate(-1deg);
+  transition-delay:315ms
+}
+.burger--exploded .burger__ingredient--bottom-bun {
+  transform:translate(-50%,132px) rotate(2deg);
+  transition-delay:360ms
 }
 .stage-caption {
   bottom:2%;
@@ -844,7 +876,7 @@ to {
   margin-right:0
 }
 .burger-stage--exploded {
-  height:580px
+  height:660px
 }
 .burger {
   transform:scale(.79)
